@@ -11,10 +11,19 @@ class person:
     def __del__(self):
         print("Xoa Class")
 
-person = person("Bao", 22, "Male")
-person.getName()
-person.getAge()
-person.getSex()
+# person = person("Bao", 22, "Male")
+# person.getName()
+# person.getAge()
+# person.getSex()
 
+class Foo:
+    __name = "ABC"
+    def __getname(self):
+        print(self.__name)
+    def get(self):
+        self.__getname()
 
+# print(Foo().__name)
+# Foo().__getname()
+Foo().get()
 
