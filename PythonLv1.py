@@ -69,14 +69,37 @@
 # print(binhphuong(x))
 
 # --------------------------------------
-print (abs.__doc__)
-print (int.__doc__)
-print (input.__doc__)
-# Code by Quantrimang.com
-def square(num):
- '''Trả lại giá trị bình phương của số được nhập vào.
- Số nhập vào phải là số nguyên.
- '''
- return num ** 2
+# print (abs.__doc__)
+# print (int.__doc__)
+# print (input.__doc__)
+# # Code by Quantrimang.com
+# def square(num):
+#  '''Trả lại giá trị bình phương của số được nhập vào.
+#  Số nhập vào phải là số nguyên.
+#  '''
+#  return num ** 2
+#
+# print (square.__doc__)
 
-print (square.__doc__)
+# -------------------------------------------
+# class person:
+#     name = "Bao"
+#     def __init__(self,name = None):
+#         self.name = name
+#
+# a = person("ABC")
+#
+# print(person.name)
+# print(a.name)
+
+# ----------------------
+from math import sqrt
+
+c = 50
+h = 30
+value = []
+items =[x for x in input("Nhap gia tri d : ").split(",")]
+for d in items:
+    value.append(str(int(round(sqrt(2*c*float(d)/h)))))
+
+print("".join(value))
