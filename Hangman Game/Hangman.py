@@ -1,9 +1,9 @@
 name = input("Enter you name : ")
 print("Hello, welcome " + name + " to play Hangman")
 print("So, what your first guess ?")
-# here we set America
+# here we set vietnamese
 word = "vietnamese"
-
+#
 guesses = " "
 # Your turn play
 turn = 10
